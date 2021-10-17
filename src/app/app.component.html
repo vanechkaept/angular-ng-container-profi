@@ -1,0 +1,10 @@
+<app-hello [id]="id" (changeId)="id = $event"></app-hello>
+
+<br />
+<hr />
+<h2>Главный компонент</h2>
+<p>ID: {{ id }}</p>
+<div>
+  <button (click)="add()">+</button>
+  <button (click)="substract()">-</button>
+</div>
