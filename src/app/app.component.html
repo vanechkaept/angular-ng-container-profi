@@ -1,10 +1,17 @@
-<app-hello [id]="id" (changeId)="id = $event"></app-hello>
+<app-hello [id]="id">
+  <div text>Инфа из родителя:</div>
+
+  <p action>
+    <button (click)="addId()">+</button>
+    <button (click)="substractId()">-</button>
+  </p>
+</app-hello>
 
 <br />
 <hr />
 <h2>Главный компонент</h2>
 <p>ID: {{ id }}</p>
 <div>
-  <button (click)="add()">+</button>
-  <button (click)="substract()">-</button>
+  <button (click)="addId()">+</button>
+  <button (click)="substractId()">-</button>
 </div>

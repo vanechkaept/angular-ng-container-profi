@@ -8,11 +8,11 @@ import { Component, VERSION } from '@angular/core';
 export class AppComponent {
   public id = 5;
 
-  public add(): void {
+  public addId(): void {
     this.id += 1;
   }
 
-  public substract(): void {
+  public substractId(): void {
     this.id -= 1;
   }
 }
